@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2A079EB6C41B0620AE3DAEED76107F6A</UUID>
+  <Target>tc.AUMS_C.PCVA.product.PCVA_Tools.A_addBigDecimal</Target>
+  <Desp>数值相加</Desp>
+  <Group>P端工具类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>二个数字相加</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>Number1</Name>
+      <Type>java.lang.String</Type>
+      <Desc>数据1</Desc>
+    </Arg>
+    <Arg>
+      <Name>Number2</Name>
+      <Type>java.lang.String</Type>
+      <Desc>数据2</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rsNumber</Name>
+      <Type>java.lang.String</Type>
+      <Desc>相加后数据</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/PCVA_Tools.java</Path>
+</Component>

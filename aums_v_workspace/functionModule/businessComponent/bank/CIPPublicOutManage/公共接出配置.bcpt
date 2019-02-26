@@ -1,0 +1,4251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  
+  <Id>1</Id>
+  
+  <UUID>177B29F4103F44C189610030C2C912E6</UUID>
+  
+  <Level>1</Level>
+  
+  <Quote>1</Quote>
+  
+  <Desp>公共接出配置</Desp>
+  
+  <RefImpl>PublicOutAdapter</RefImpl>
+  
+  <Auth/>
+  
+  <ReadOnly>0</ReadOnly>
+  
+  <ToolTip/>
+  
+  <InArgs/>
+  
+  <OutArgs/>
+  
+  <Implementation>
+    
+    <Node>
+      
+      <Id>1</Id>
+      
+      <Name>异常结束</Name>
+      
+      <Desp>异常结束</Desp>
+      
+      <Sql/>
+      
+      <Type>4</Type>
+      
+      <Target>END</Target>
+      
+      <Style>0</Style>
+      
+      <Tooltip>异常结束</Tooltip>
+      
+      <Visible>1</Visible>
+      
+      <Collapse>0</Collapse>
+      
+      <Constraint>
+        
+        <Location>90,100</Location>
+        
+        <Size>63,63</Size>
+      
+      </Constraint>
+      
+      <SourceConnections/>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <Logic>
+        
+        <Total>0</Total>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Id>5</Id>
+      
+      <Name>正常结束</Name>
+      
+      <Desp>正常结束</Desp>
+      
+      <Sql/>
+      
+      <Type>3</Type>
+      
+      <Target>END</Target>
+      
+      <Style>0</Style>
+      
+      <Tooltip>正常结束</Tooltip>
+      
+      <Visible>1</Visible>
+      
+      <Collapse>0</Collapse>
+      
+      <Constraint>
+        
+        <Location>507,1360</Location>
+        
+        <Size>63,63</Size>
+      
+      </Constraint>
+      
+      <SourceConnections/>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <Logic>
+        
+        <Total>0</Total>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>06C9F727110D996764692F81E5672E3A</Ref>
+      
+      <Id>8</Id>
+      
+      <Name>取全局错误到容器</Name>
+      
+      <Desp>取全局错误到容器</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>平台内嵌类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>cn.com.agree.afa.jcomponent.GlobalErrorHolder.putGlobalErrorToDict</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/平台内嵌类组件/取全局错误到容器.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>取全局错误到容器</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>23,-96</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>31</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>装载所要获取的全局错误的JavaDict容器</Name>
+          
+          <Key>dict</Key>
+          
+          <Arg>__RSP__["_CommRSP_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>错误类型对应的关键字Key</Name>
+          
+          <Key>errorTypeKey</Key>
+          
+          <Arg>"p_excptype"</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>错误代码对应的关键字Key</Name>
+          
+          <Key>errorCodeKey</Key>
+          
+          <Arg>"p_ret_code"</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>错误信息对应的关键字Key</Name>
+          
+          <Key>errorMsgKey</Key>
+          
+          <Arg>"p_ret_desc"</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>31</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Id>14</Id>
+      
+      <Name>默认逻辑错误委托</Name>
+      
+      <Desp>默认逻辑错误委托</Desp>
+      
+      <Type>6</Type>
+      
+      <Target>DefaultException</Target>
+      
+      <Style>2</Style>
+      
+      <Tooltip>默认逻辑错误委托</Tooltip>
+      
+      <Visible>1</Visible>
+      
+      <Collapse>2</Collapse>
+      
+      <Constraint>
+        
+        <Location>71,-224</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>8</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>29</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET0>8</RET0>
+        
+        <RET1>29</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>81F454E9AB9AF617A97DDBBA9BDD7ED1</Ref>
+      
+      <Id>15</Id>
+      
+      <Name>数据查询类统一接口</Name>
+      
+      <Desp>查询通讯服务配置</Desp>
+      
+      <Level>1</Level>
+      
+      <Group>数据库操作</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.bank.B_DBUnityRptOper.B_DBUnityRptOpr</Target>
+      
+      <FilePath>/functionModule/technologyComponent/bank/registerInfo/数据库操作/数据查询类统一接口.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>对数据库查询类操作接口
+ext_context为扩展参数字典,里面现在有如下KEY
+orderlist为排序数据信息,格式为[['排序字段1,排序字段2,...,排序字段n'], ['ASC/DESC','ASC/DESC',...,'ASC/DESC']]
+pagelist为分页获取业务数据信息，格式为[分页标识,当前页面码,每页的记录数];(分页标识:1-最后一页,2-上一页,3-下一页,4-当前页)
+dyncondlist格式为动态条件的嵌套list,如[[["a", "in", "'3','2','1'", "and"],["b", "is", "Null"], "or"], [["c", "=",  None, "and"], ["b", "!=", None]]],表示 (a in('3','2','1') and b is null) or (c=cond_data_context['c'] and b != cond_data_context['b'])</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>300,128</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>2</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>24</targetId>
+          
+          <SourceTerminal>2</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>2</Name>
+          
+          <Desp>查询类无记录</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>条件数据容器</Name>
+          
+          <Key>cond_data_context</Key>
+          
+          <Arg>{
+"LOCALCODE": __REQ__["_localcode_"]
+}</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>业务操作关键字</Name>
+          
+          <Key>busioper</Key>
+          
+          <Arg>"GetCommMapInfo"</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>扩展参数字典</Name>
+          
+          <Key>ext_context</Key>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>数据操作映射数据容器(业务扩展信息）</Name>
+          
+          <Key>map_context</Key>
+          
+          <Arg>{ "modulecode": "CIPPublicOutManage", "transcode": "PublicOutAdapter" }</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs>
+        
+        <Arg>
+          
+          <Name>获取到的数据字典</Name>
+          
+          <Key>out_context</Key>
+          
+          <Arg>__REQ__["_CommMapInfo_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>查询到的数据条数</Name>
+          
+          <Key>rownum</Key>
+          
+          <Arg>__REQ__["_CommMapInfoCount_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>总记录数</Name>
+          
+          <Key>totalrownum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>总页数</Name>
+          
+          <Key>totalpagenum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>当前页码</Name>
+          
+          <Key>nowpagenum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+      
+      </OutArgs>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET1>2</RET1>
+        
+        <RET2>24</RET2>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      
+      <Id>17</Id>
+      
+      <Name>容器变量赋值</Name>
+      
+      <Desp>通讯信息赋值</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.setValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量赋值.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>容器变量赋值</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>320,293</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>3</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>inContext</Key>
+          
+          <Arg>__REQ__["_ExchangeCfg_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>变量赋值列表，如：[[key1,value1],[key2,value2],[key3,value3]...]</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>[
+["servicecode",__REQ__["_CommMapInfo_"][0]["SERVICECODE"]],
+["servicescene",__REQ__["_CommMapInfo_"][0]["SERVICESCENE"]],
+["serviceid",__REQ__["_CommMapInfo_"][0]["SERVICEID"]],
+["serviceename", __REQ__["_CommMapInfo_"][0]["SERVICEENAME"]],
+["isfiletrans",__REQ__["_CommMapInfo_"][0]["ISFILETRANS"]],
+["serviceoper",__REQ__["_CommMapInfo_"][0]["SERVICEOPER"]],
+["sertranscode",__REQ__["_CommMapInfo_"][0]["SERTRANSCODE"]],
+["servicetype",__REQ__["_CommMapInfo_"][0]["SERVICETYPE"]],
+["des",__REQ__["_CommMapInfo_"][0]["DES"]],
+
+
+["IP",__REQ__["_CommAttrInfo_"][0]["SERVICEIP"]],
+["PORT",__REQ__["_CommAttrInfo_"][0]["SERVICEPORT"]],
+["headlen",__REQ__["_CommAttrInfo_"][0]["HEADLEN"]],
+["containflag", __REQ__["_CommAttrInfo_"][0]["ISSELF"]],
+["encoding",__REQ__["_CommAttrInfo_"][0]["ENCODING"]],
+["rootname",__REQ__["_CommAttrInfo_"][0]["ROOTNAME"]],
+
+["PACKAGENAME",__REQ__["_CommAttrInfo_"][0]["PACKAGENAME"]],
+["COMPONENTNAME",__REQ__["_CommAttrInfo_"][0]["COMPONENTNAME"]]
+]
+</Arg>          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>3</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Id>18</Id>
+      
+      <Name>开始</Name>
+      
+      <Desp>开始</Desp>
+      
+      <Type>2</Type>
+      
+      <Target>Begin</Target>
+      
+      <Style>0</Style>
+      
+      <Tooltip>开始</Tooltip>
+      
+      <Visible>null</Visible>
+      
+      <Collapse>0</Collapse>
+      
+      <Constraint>
+        
+        <Location>120,-320</Location>
+        
+        <Size>63,63</Size>
+      
+      </Constraint>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>14</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>锚点一</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>14</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>443D4B7D06AFEAAFD3B8DE82371A6C5F</Ref>
+      
+      <Id>7</Id>
+      
+      <Name>创建信息的数据对象</Name>
+      
+      <Desp>创建请求配置容器</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>对象操作类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Object.createObject</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/对象操作类组件/创建信息的数据对象.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>按照数据对象的描述list创建数据对象,数据对象描述list的格式为[["名称",类型(list/dict/tuple)], ...]</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>290,-31</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>22</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>数据字典容器</Name>
+          
+          <Key>argContext</Key>
+          
+          <Arg>__REQ__</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>数据对象描述list</Name>
+          
+          <Key>dataObjList</Key>
+          
+          <Arg>[ 
+["_ExchangeCfg_",{}]
+]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>22</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>81F454E9AB9AF617A97DDBBA9BDD7ED1</Ref>
+      
+      <Id>2</Id>
+      
+      <Name>数据查询类统一接口</Name>
+      
+      <Desp>查询通讯属性配置</Desp>
+      
+      <Level>1</Level>
+      
+      <Group>数据库操作</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.bank.B_DBUnityRptOper.B_DBUnityRptOpr</Target>
+      
+      <FilePath>/functionModule/technologyComponent/bank/registerInfo/数据库操作/数据查询类统一接口.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>对数据库查询类操作接口
+ext_context为扩展参数字典,里面现在有如下KEY
+orderlist为排序数据信息,格式为[['排序字段1,排序字段2,...,排序字段n'], ['ASC/DESC','ASC/DESC',...,'ASC/DESC']]
+pagelist为分页获取业务数据信息，格式为[分页标识,当前页面码,每页的记录数];(分页标识:1-最后一页,2-上一页,3-下一页,4-当前页)
+dyncondlist格式为动态条件的嵌套list,如[[["a", "in", "'3','2','1'", "and"],["b", "is", "Null"], "or"], [["c", "=",  None, "and"], ["b", "!=", None]]],表示 (a in('3','2','1') and b is null) or (c=cond_data_context['c'] and b != cond_data_context['b'])</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>310,215</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>17</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>25</targetId>
+          
+          <SourceTerminal>2</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>2</Name>
+          
+          <Desp>查询类无记录</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>条件数据容器</Name>
+          
+          <Key>cond_data_context</Key>
+          
+          <Arg>{
+"COMMTYPE": __REQ__["_CommMapInfo_"][0]["COMMTYPE"]
+}</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>业务操作关键字</Name>
+          
+          <Key>busioper</Key>
+          
+          <Arg>"GetCommArrtInfo"</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>扩展参数字典</Name>
+          
+          <Key>ext_context</Key>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>数据操作映射数据容器(业务扩展信息）</Name>
+          
+          <Key>map_context</Key>
+          
+          <Arg>{ "modulecode": "CIPPublicOutManage", "transcode": "PublicOutAdapter" }</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs>
+        
+        <Arg>
+          
+          <Name>获取到的数据字典</Name>
+          
+          <Key>out_context</Key>
+          
+          <Arg>__REQ__["_CommAttrInfo_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>查询到的数据条数</Name>
+          
+          <Key>rownum</Key>
+          
+          <Arg>__REQ__["_CommAttrInfoCount_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>总记录数</Name>
+          
+          <Key>totalrownum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>总页数</Name>
+          
+          <Key>totalpagenum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>当前页码</Name>
+          
+          <Key>nowpagenum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+      
+      </OutArgs>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET1>17</RET1>
+        
+        <RET2>25</RET2>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <UUID>12E50815DA5B48E4896E2F8E049ED2B7</UUID>
+      
+      <Ref>899D0EF1853576D8C6BB050F52FE4834</Ref>
+      
+      <Id>3</Id>
+      
+      <Name>布尔判断框架</Name>
+      
+      <Desp>没有指定超时时间</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>判断语句类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_JudgmentStatement.boolFrame</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/判断语句类组件/布尔判断框架.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>布尔判断框架,返回ture/false</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>343,373</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>4</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>6</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>需要判断的对象</Name>
+          
+          <Key>bool</Key>
+          
+          <Arg>__REQ__["_CommMapInfo_"][0]["COMMTIMEOUT"]==null || "".equals(__REQ__["_CommMapInfo_"][0]["COMMTIMEOUT"])</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.Object</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET1>4</RET1>
+        
+        <RET0>6</RET0>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      
+      <Id>4</Id>
+      
+      <Name>容器变量赋值</Name>
+      
+      <Desp>通讯超时赋值</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.setValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量赋值.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>容器变量赋值</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>459,450</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>9</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>inContext</Key>
+          
+          <Arg>__REQ__["_ExchangeCfg_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>变量赋值列表，如：[[key1,value1],[key2,value2],[key3,value3]...]</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>[
+["TIMEOUT",__REQ__["_CommAttrInfo_"][0]["TIMEOUT"]]
+]
+</Arg>          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>9</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      
+      <Id>6</Id>
+      
+      <Name>容器变量赋值</Name>
+      
+      <Desp>通讯超时赋值</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.setValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量赋值.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>容器变量赋值</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>242,450</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>9</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>inContext</Key>
+          
+          <Arg>__REQ__["_ExchangeCfg_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>变量赋值列表，如：[[key1,value1],[key2,value2],[key3,value3]...]</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>[
+["TIMEOUT",__REQ__["_CommMapInfo_"][0]["COMMTIMEOUT"]]
+]
+</Arg>          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>9</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>899D0EF1853576D8C6BB050F52FE4834</Ref>
+      
+      <Id>9</Id>
+      
+      <Name>布尔判断框架</Name>
+      
+      <Desp>是否包含文件传输</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>判断语句类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_JudgmentStatement.boolFrame</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/判断语句类组件/布尔判断框架.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>布尔判断框架,返回ture/false</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>362,538</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>10</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>11</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>需要判断的对象</Name>
+          
+          <Key>bool</Key>
+          
+          <Arg>"true".equals(__REQ__["_ExchangeCfg_"]["isfiletrans"].toString())</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.Object</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET0>10</RET0>
+        
+        <RET1>11</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <UUID>88F8A86F31E64ABD9EA92DE739D5AC12</UUID>
+      
+      <Id>10</Id>
+      
+      <Name>动态调用</Name>
+      
+      <Desp>调用通讯组件</Desp>
+      
+      <Sql/>
+      
+      <Type>7</Type>
+      
+      <Target>cn.com.agree.afa.jcomponent.bc.BComponentInvoker</Target>
+      
+      <Tooltip>动态调用</Tooltip>
+      
+      <Visible>1</Visible>
+      
+      <Collapse>0</Collapse>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <Constraint>
+        
+        <Location>343,873</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <IsError>0</IsError>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>21</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>包名</Name>
+          
+          <Key>pkgName</Key>
+          
+          <Arg>__REQ__["_ExchangeCfg_"]["PACKAGENAME"]</Arg>
+          
+          <Level>4</Level>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>业务组件名</Name>
+          
+          <Key>bcName</Key>
+          
+          <Arg>__REQ__["_ExchangeCfg_"]["COMPONENTNAME"]</Arg>
+          
+          <Level>4</Level>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>21</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>81F454E9AB9AF617A97DDBBA9BDD7ED1</Ref>
+      
+      <Id>11</Id>
+      
+      <Name>数据查询类统一接口</Name>
+      
+      <Desp>查询文件传输配置</Desp>
+      
+      <Level>1</Level>
+      
+      <Group>数据库操作</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.bank.B_DBUnityRptOper.B_DBUnityRptOpr</Target>
+      
+      <FilePath>/functionModule/technologyComponent/bank/registerInfo/数据库操作/数据查询类统一接口.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>对数据库查询类操作接口
+ext_context为扩展参数字典,里面现在有如下KEY
+orderlist为排序数据信息,格式为[['排序字段1,排序字段2,...,排序字段n'], ['ASC/DESC','ASC/DESC',...,'ASC/DESC']]
+pagelist为分页获取业务数据信息，格式为[分页标识,当前页面码,每页的记录数];(分页标识:1-最后一页,2-上一页,3-下一页,4-当前页)
+dyncondlist格式为动态条件的嵌套list,如[[["a", "in", "'3','2','1'", "and"],["b", "is", "Null"], "or"], [["c", "=",  None, "and"], ["b", "!=", None]]],表示 (a in('3','2','1') and b is null) or (c=cond_data_context['c'] and b != cond_data_context['b'])</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>469,613</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>12</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>2</Name>
+          
+          <Desp>查询类无记录</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>条件数据容器</Name>
+          
+          <Key>cond_data_context</Key>
+          
+          <Arg>{
+"LOCALCODE": __REQ__["_localcode_"]
+}</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>业务操作关键字</Name>
+          
+          <Key>busioper</Key>
+          
+          <Arg>"GetFileTransMapInfo"</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>扩展参数字典</Name>
+          
+          <Key>ext_context</Key>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>数据操作映射数据容器(业务扩展信息）</Name>
+          
+          <Key>map_context</Key>
+          
+          <Arg>{ "modulecode": "CIPPublicOutManage", "transcode": "PublicOutAdapter" }</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs>
+        
+        <Arg>
+          
+          <Name>获取到的数据字典</Name>
+          
+          <Key>out_context</Key>
+          
+          <Arg>__REQ__["_FileTransMapInfo_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>查询到的数据条数</Name>
+          
+          <Key>rownum</Key>
+          
+          <Arg>__REQ__["_FileTransMapInfoCount_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>总记录数</Name>
+          
+          <Key>totalrownum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>总页数</Name>
+          
+          <Key>totalpagenum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>当前页码</Name>
+          
+          <Key>nowpagenum</Key>
+          
+          <Level>4</Level>
+          
+          <Type>int</Type>
+        
+        </Arg>
+      
+      </OutArgs>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>12</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      
+      <Id>12</Id>
+      
+      <Name>容器变量赋值</Name>
+      
+      <Desp>文件传输信息赋值</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.setValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量赋值.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>容器变量赋值</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>502,693</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>13</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>inContext</Key>
+          
+          <Arg>__REQ__["_ExchangeCfg_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>变量赋值列表，如：[[key1,value1],[key2,value2],[key3,value3]...]</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>[
+["filetranstype",__REQ__["_FileTransMapInfo_"][0]["SERVICECODE"]],
+["fileflag",__REQ__["_FileTransMapInfo_"][0]["SERVICESCENE"]],
+["fileserviceip",__REQ__["_FileTransMapInfo_"][0]["SERVICEID"]],
+["fileserviceport", __REQ__["_FileTransMapInfo_"][0]["SERVICEENAME"]],
+["fileserviceid",__REQ__["_FileTransMapInfo_"][0]["ISFILETRANS"]],
+["fileserviceuser",__REQ__["_FileTransMapInfo_"][0]["DESC"]],
+["fileservicepasswd",__REQ__["_CommAttrInfo_"][0]["SERVICEIP"]]
+]
+</Arg>          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>13</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>899D0EF1853576D8C6BB050F52FE4834</Ref>
+      
+      <Id>13</Id>
+      
+      <Name>布尔判断框架</Name>
+      
+      <Desp>是否上传</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>判断语句类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_JudgmentStatement.boolFrame</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/判断语句类组件/布尔判断框架.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>布尔判断框架,返回ture/false</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>540,773</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>10</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>27</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>需要判断的对象</Name>
+          
+          <Key>bool</Key>
+          
+          <Arg>"up".equals(__REQ__["_ExchangeCfg_"]["fileflag"].toString())</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.Object</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET0>10</RET0>
+        
+        <RET1>27</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>899D0EF1853576D8C6BB050F52FE4834</Ref>
+      
+      <Id>16</Id>
+      
+      <Name>布尔判断框架</Name>
+      
+      <Desp>是否下载</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>判断语句类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_JudgmentStatement.boolFrame</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/判断语句类组件/布尔判断框架.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>布尔判断框架,返回ture/false</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>520,1099</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>30</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>28</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>需要判断的对象</Name>
+          
+          <Key>bool</Key>
+          
+          <Arg>"down".equals(__REQ__["_ExchangeCfg_"]["fileflag"].toString())</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.Object</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET0>30</RET0>
+        
+        <RET1>28</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>899D0EF1853576D8C6BB050F52FE4834</Ref>
+      
+      <Id>20</Id>
+      
+      <Name>布尔判断框架</Name>
+      
+      <Desp>是否包含文件传输</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>判断语句类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_JudgmentStatement.boolFrame</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/判断语句类组件/布尔判断框架.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>布尔判断框架,返回ture/false</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>449,1026</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>16</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>30</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>需要判断的对象</Name>
+          
+          <Key>bool</Key>
+          
+          <Arg>"true".equals(__REQ__["_ExchangeCfg_"]["isfiletrans"].toString())</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.Object</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET1>16</RET1>
+        
+        <RET0>30</RET0>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <UUID>D5C4AA4B6AB2484692AD9A0101F0A70E</UUID>
+      
+      <Ref>C61DE8BD971504B5B39989899DF0864C</Ref>
+      
+      <Id>21</Id>
+      
+      <Name>响应码比较</Name>
+      
+      <Desp>响应码比较</Desp>
+      
+      <Level>1</Level>
+      
+      <Group>常量操作类</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.bank.B_ConstantOperate.B_RespCodeCompare</Target>
+      
+      <FilePath>/functionModule/technologyComponent/bank/registerInfo/常量操作类/响应码比较.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>入参常量名称和常量值  在常量类中找是否一致  一致返回1 不一致返回0</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>353,949</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>20</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>19</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>响应码名称</Name>
+          
+          <Key>rspCodeStr</Key>
+          
+          <Arg>"Success"</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>响应码值</Name>
+          
+          <Key>rspCodeVal</Key>
+          
+          <Arg>__RSP__["_CommRSP_"]["h_ret_code"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>java.lang.String</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET1>20</RET1>
+        
+        <RET0>19</RET0>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>443D4B7D06AFEAAFD3B8DE82371A6C5F</Ref>
+      
+      <Id>22</Id>
+      
+      <Name>创建信息的数据对象</Name>
+      
+      <Desp>创建应答容器</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>对象操作类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Object.createObject</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/对象操作类组件/创建信息的数据对象.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>按照数据对象的描述list创建数据对象,数据对象描述list的格式为[["名称",类型(list/dict/tuple)], ...]</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>299,48</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>15</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>数据字典容器</Name>
+          
+          <Key>argContext</Key>
+          
+          <Arg>__RSP__</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>数据对象描述list</Name>
+          
+          <Key>dataObjList</Key>
+          
+          <Arg>[ 
+["_CommRSP_",{}]
+]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>15</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      
+      <Id>19</Id>
+      
+      <Name>容器变量赋值</Name>
+      
+      <Desp>错误信息赋值</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.setValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量赋值.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>容器变量赋值</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>272,1026</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>23</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>inContext</Key>
+          
+          <Arg>__RSP__["_CommRSP_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>变量赋值列表，如：[[key1,value1],[key2,value2],[key3,value3]...]</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>[ 
+["p_excptype",((JavaDict)__RSP__["_CommRSP_"]).getItem("h_excptype","")], 
+["p_ret_code",((JavaDict)__RSP__["_CommRSP_"]).getItem("h_ret_code","")], 
+["p_ret_desc",((JavaDict)__RSP__["_CommRSP_"]).getItem("h_ret_desc","")]
+]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>23</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Id>23</Id>
+      
+      <Name>异常结束</Name>
+      
+      <Desp>异常结束</Desp>
+      
+      <Sql/>
+      
+      <Type>4</Type>
+      
+      <Target>END</Target>
+      
+      <Style>0</Style>
+      
+      <Tooltip>异常结束</Tooltip>
+      
+      <Visible>1</Visible>
+      
+      <Collapse>0</Collapse>
+      
+      <Constraint>
+        
+        <Location>320,1133</Location>
+        
+        <Size>63,63</Size>
+      
+      </Constraint>
+      
+      <SourceConnections/>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <Logic>
+        
+        <Total>0</Total>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      
+      <Id>24</Id>
+      
+      <Name>容器变量赋值</Name>
+      
+      <Desp>通讯服务未配置</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.setValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量赋值.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>通讯服务未配置</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>618,215</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>26</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>inContext</Key>
+          
+          <Arg>__RSP__["_CommRSP_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>变量赋值列表，如：[[key1,value1],[key2,value2],[key3,value3]...]</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>[ 
+["p_ret_code","COMM001"], 
+["p_ret_desc","通讯服务未配置"]
+]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>26</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>C66D34E5490B981A0C6454FE813E25BF</Ref>
+      
+      <Id>25</Id>
+      
+      <Name>容器变量赋值</Name>
+      
+      <Desp>通讯属性为配置</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.setValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量赋值.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>容器变量赋值</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>540,293</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>26</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>inContext</Key>
+          
+          <Arg>__RSP__["_CommRSP_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>变量赋值列表，如：[[key1,value1],[key2,value2],[key3,value3]...]</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>[ 
+["p_ret_code","COMM002"], 
+["p_ret_desc","通讯属性未配置"]
+]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>26</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Id>26</Id>
+      
+      <Name>异常结束</Name>
+      
+      <Desp>异常结束</Desp>
+      
+      <Sql/>
+      
+      <Type>4</Type>
+      
+      <Target>END</Target>
+      
+      <Style>0</Style>
+      
+      <Tooltip>异常结束</Tooltip>
+      
+      <Visible>1</Visible>
+      
+      <Collapse>0</Collapse>
+      
+      <Constraint>
+        
+        <Location>680,433</Location>
+        
+        <Size>63,63</Size>
+      
+      </Constraint>
+      
+      <SourceConnections/>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <Logic>
+        
+        <Total>0</Total>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <UUID>B086DFF4D64D4D12ACB9C49619EC63C9</UUID>
+      
+      <Ref>396C1B76618848EE6C225FE1E227F19F</Ref>
+      
+      <Id>27</Id>
+      
+      <Name>空组件</Name>
+      
+      <Desp>空组件</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>调试类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Debug.pass</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/调试类组件/空组件.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>空组件，用于进行断点调试</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>644,865</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>10</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>E</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>处理成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>10</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>396C1B76618848EE6C225FE1E227F19F</Ref>
+      
+      <Id>28</Id>
+      
+      <Name>空组件</Name>
+      
+      <Desp>空组件</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>调试类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Debug.pass</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/调试类组件/空组件.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>空组件，用于进行断点调试</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>632,1169</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>30</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>处理成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs/>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>30</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>B21E2F2C08EB5162297DBDD30D8A2221</Ref>
+      
+      <Id>29</Id>
+      
+      <Name>必输参数检查</Name>
+      
+      <Desp>必输参数检查</Desp>
+      
+      <Level>1</Level>
+      
+      <Group>业务检查类</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.bank.B_BusiCheck.B_CheckValue</Target>
+      
+      <FilePath>/functionModule/technologyComponent/bank/registerInfo/业务检查类/必输参数检查.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip/>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>291,-120</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>7</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>检查容器</Name>
+          
+          <Key>reqdict</Key>
+          
+          <Arg>__REQ__
+</Arg>          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>检查集如[[字段,长度],["workdate","8"]]</Name>
+          
+          <Key>reqlist</Key>
+          
+          <Arg>[
+["_localcode_"]
+]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>7</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <UUID>1D7D3C6D5ED64122917823A406324FBE</UUID>
+      
+      <Ref>173514726933AA2ECF4A6F29BCA30A5F</Ref>
+      
+      <Id>30</Id>
+      
+      <Name>容器变量删除</Name>
+      
+      <Desp>删除通讯码</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.delete</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量删除.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>删除容器中指定的变量</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>459,1256</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>5</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>__REQ__</Key>
+          
+          <Arg>__REQ__</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>删除容器中变量的键列表</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>["_localcode_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>1</Total>
+        
+        <RET1>5</RET1>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Node>
+      
+      <Ref>173514726933AA2ECF4A6F29BCA30A5F</Ref>
+      
+      <Id>31</Id>
+      
+      <Name>容器变量删除</Name>
+      
+      <Desp>删除通讯码</Desp>
+      
+      <Level>0</Level>
+      
+      <Group>字典处理类组件</Group>
+      
+      <Sql/>
+      
+      <Type>11</Type>
+      
+      <Target>tc.platform.P_Dict.delete</Target>
+      
+      <FilePath>/functionModule/technologyComponent/platform/registerInfo/字典处理类组件/容器变量删除.tcpt</FilePath>
+      
+      <Style>3</Style>
+      
+      <Tooltip>删除容器中指定的变量</Tooltip>
+      
+      <Skip>
+        
+        <Enabled>0</Enabled>
+        
+        <Branch>1</Branch>
+      
+      </Skip>
+      
+      <IsDebug>0</IsDebug>
+      
+      <Debug>
+        
+        <Codes>
+          
+          <Total>0</Total>
+        
+        </Codes>
+        
+        <Result>1</Result>
+        
+        <Return/>
+        
+        <ReturnList/>
+      
+      </Debug>
+      
+      <Constraint>
+        
+        <Location>42,-13</Location>
+        
+        <Size>160,46</Size>
+      
+      </Constraint>
+      
+      <Async>0</Async>
+      
+      <SourceConnections>
+        
+        <Connection>
+          
+          <targetId>1</targetId>
+          
+          <SourceTerminal>1</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+        
+        <Connection>
+          
+          <targetId>1</targetId>
+          
+          <SourceTerminal>0</SourceTerminal>
+          
+          <TargetTerminal>N</TargetTerminal>
+        
+        </Connection>
+      
+      </SourceConnections>
+      
+      <Terminals>
+        
+        <Terminal>
+          
+          <Name>0</Name>
+          
+          <Desp>失败</Desp>
+        
+        </Terminal>
+        
+        <Terminal>
+          
+          <Name>1</Name>
+          
+          <Desp>成功</Desp>
+        
+        </Terminal>
+      
+      </Terminals>
+      
+      <InArgs>
+        
+        <Arg>
+          
+          <Name>请求容器</Name>
+          
+          <Key>__REQ__</Key>
+          
+          <Arg>__REQ__</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+        
+        </Arg>
+        
+        <Arg>
+          
+          <Name>删除容器中变量的键列表</Name>
+          
+          <Key>paramList</Key>
+          
+          <Arg>["_localcode_"]</Arg>
+          
+          <Level>4</Level>
+          
+          <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+        
+        </Arg>
+      
+      </InArgs>
+      
+      <OutArgs/>
+      
+      <AspectUsed>0</AspectUsed>
+      
+      <Logic>
+        
+        <Total>2</Total>
+        
+        <RET1>1</RET1>
+        
+        <RET0>1</RET0>
+      
+      </Logic>
+    
+    </Node>
+    
+    <Usage>1</Usage>
+  
+  </Implementation>
+</Component>

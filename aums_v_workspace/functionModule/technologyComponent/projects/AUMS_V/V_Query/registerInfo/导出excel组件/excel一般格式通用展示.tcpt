@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2404A4BFE3F823AC18FE1D78D6F1F9B4</UUID>
+  <Target>tc.AUMS_V.V_Query.Parts.ExcelDatabaseView.A_ExcelPOI</Target>
+  <Desp>excel一般格式通用展示</Desp>
+  <Group>导出excel组件</Group>
+  <Level>0</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resultSet</Name>
+      <Type>java.util.List</Type>
+      <Desc>结果集</Desc>
+    </Arg>
+    <Arg>
+      <Name>jsonKey</Name>
+      <Type>java.util.List</Type>
+      <Desc>jsonKey</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>BASE64Encoder</Name>
+      <Type>java.util.List</Type>
+      <Desc>Excel转换BASE64Encoder字符串结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/V_Query/componentSourceCode/tc/AUMS_V/V_Query/Parts/ExcelDatabaseView.java</Path>
+</Component>

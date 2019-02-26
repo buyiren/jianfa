@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>CD3D88F4FCE70B26B99F4CEC6121106D</UUID>
+  <Target>tc.AUMS_V.ReportForms_Manage.excel.devopenrate.A_ExcelPOI</Target>
+  <Desp>devopenrate</Desp>
+  <Group>导出excel组件</Group>
+  <Level>0</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>导出文件名</Desc>
+    </Arg>
+    <Arg>
+      <Name>resultSet</Name>
+      <Type>java.util.List</Type>
+      <Desc>结果集</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>BASE64Encoder</Name>
+      <Type>java.lang.String</Type>
+      <Desc>Excel转换BASE64Encoder字符串结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/ReportForms_Manage/componentSourceCode/tc/AUMS_V/ReportForms_Manage/excel/devopenrate.java</Path>
+</Component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>4F6EC82FB896F290892DE779BC64E1BB</UUID>
+  <Target>tc.View.Server.A_DevWarn.A_CheckCardStat</Target>
+  <Desp>预警卡箱剩余张数</Desp>
+  <Group>预警</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>预警卡箱剩余张数</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>DeviceId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>设备ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>PolicyMap</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>策略</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ExceptionFlag</Name>
+      <Type>java.lang.String</Type>
+      <Desc>异常标识（0:无异常 1：有异常）</Desc>
+    </Arg>
+    <Arg>
+      <Name>ExceptionStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>异常信息</Desc>
+    </Arg>
+    <Arg>
+      <Name>brno</Name>
+      <Type>java.lang.String</Type>
+      <Desc>网点号</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DevWarn.java</Path>
+</Component>

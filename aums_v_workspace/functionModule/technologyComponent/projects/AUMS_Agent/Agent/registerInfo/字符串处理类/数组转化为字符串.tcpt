@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6F3FFAE660E79BC110755AAF46D02210</UUID>
+  <Target>tc.View.Agent.A_StringUtils.A_ParseByte</Target>
+  <Desp>数组转化为字符串</Desp>
+  <Group>字符串处理类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>obj</Name>
+      <Type>java.lang.Byte[]</Type>
+      <Desc>源数组</Desc>
+    </Arg>
+    <Arg>
+      <Name>code</Name>
+      <Type>java.lang.String</Type>
+      <Desc>编码方式</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resultStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>数组对应的字符串</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_StringUtils.java</Path>
+</Component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>8A609E55DF26B0599F534BACE5EB6FC7</UUID>
+  <Target>tc.AUMS_C.PCVA.product.PCVA_Tools.YZMCreater</Target>
+  <Desp>生成验证码</Desp>
+  <Group>P端工具类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>生成验证码</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>YZMLength</Name>
+      <Type>int</Type>
+      <Desc>验证码长度</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>YZMString</Name>
+      <Type>java.lang.String</Type>
+      <Desc>验证码</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/PCVA_Tools.java</Path>
+</Component>

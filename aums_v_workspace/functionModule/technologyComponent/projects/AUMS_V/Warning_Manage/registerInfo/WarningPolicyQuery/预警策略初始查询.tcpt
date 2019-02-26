@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E053639774B91AA65A1A59CFBD88BBE2</UUID>
+  <Target>tc.AUMS_V.Warning_Manage.Warning_Manage.Parts.A_WarningPolicyQuery.A_warningQuery</Target>
+  <Desp>预警策略初始查询</Desp>
+  <Group>WarningPolicyQuery</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>预警策略结果集</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tableData</Name>
+      <Type>com.alibaba.fastjson.JSONObject</Type>
+      <Desc>预警策略表格</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Warning_Manage/componentSourceCode/tc/AUMS_V/Warning_Manage/Warning_Manage/Parts/A_WarningPolicyQuery.java</Path>
+</Component>

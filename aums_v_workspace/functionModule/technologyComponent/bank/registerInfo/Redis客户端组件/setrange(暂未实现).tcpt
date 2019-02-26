@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>A50A04C578DEAECB6D2D1A532600851A</UUID>
+  <Target>tc.bank.product.B_Redis.B_setrange</Target>
+  <Desp>setrange(暂未实现)</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>这个命令的作用是覆盖key对应的string的一部分，从指定的offset处开始，覆盖value的长度</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+    <Arg>
+      <Name>offset</Name>
+      <Type>long</Type>
+      <Desc>起始位置</Desc>
+    </Arg>
+    <Arg>
+      <Name>value</Name>
+      <Type>java.lang.String</Type>
+      <Desc>要覆盖的值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>length</Name>
+      <Type>int</Type>
+      <Desc>该命令修改后的字符串长度</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_Redis.java</Path>
+</Component>

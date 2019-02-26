@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C988C648FC9ED0E38E9A5A0C5D02B0EA</UUID>
+  <Target>tc.View.Server.A_DataBase.P_DB_DDLCrt</Target>
+  <Desp>对象创建</Desp>
+  <Group>数据操作（多连接池）</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>执行数据库对象DDL创建语句</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>连接池名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>sqlcmd</Name>
+      <Type>java.lang.String</Type>
+      <Desc>DDL创建语句SQL</Desc>
+    </Arg>
+    <Arg>
+      <Name>ver</Name>
+      <Type>java.lang.String</Type>
+      <Desc>版本日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>area</Name>
+      <Type>java.lang.String</Type>
+      <Desc>适用区域</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败,数据库异常</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DataBase.java</Path>
+</Component>

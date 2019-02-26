@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>05DF08EA2EF913CA944EB218BE665A80</UUID>
+  <Target>tc.View.Agent.A_FileUtils.A_setCurrentVer</Target>
+  <Desp>更新代理端版本号</Desp>
+  <Group>高效文件处理组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据传入的版本号，写入ver.cfg文件</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>currentVer</Name>
+      <Type>java.lang.String</Type>
+      <Desc>版本号</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_FileUtils.java</Path>
+</Component>

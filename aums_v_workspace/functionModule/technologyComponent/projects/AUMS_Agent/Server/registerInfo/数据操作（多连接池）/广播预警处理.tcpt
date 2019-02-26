@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6C6D8A44A2CCC9302615A0F57B0EF3A6</UUID>
+  <Target>tc.View.Server.A_DataBase.A_BroadcastAlert</Target>
+  <Desp>广播预警处理</Desp>
+  <Group>数据操作（多连接池）</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据配置中的FRAME_BRO_CON或NORMAL_BRO_CON字段（分钟|条数 如 1|200），判断单位时间内发生的广播数量是否超出限制，若超出则登记预警表ABMSG_WARN_INFO和现场保护表ABMSG_PROT_INFO</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>连接池名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>thresholdValue</Name>
+      <Type>java.lang.String</Type>
+      <Desc>阀值</Desc>
+    </Arg>
+    <Arg>
+      <Name>is_frame</Name>
+      <Type>java.lang.String</Type>
+      <Desc>是否发往主框架（1-是，0-否）</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DataBase.java</Path>
+</Component>

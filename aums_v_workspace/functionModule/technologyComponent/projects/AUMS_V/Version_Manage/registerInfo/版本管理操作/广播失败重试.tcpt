@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>F950E517866B3FF204016CE26CC72C87</UUID>
+  <Target>tc.AUMS_V.Version_Manage.util.A_VersionManageOperate.notifyFailReSend</Target>
+  <Desp>广播失败重试</Desp>
+  <Group>版本管理操作</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>广播失败重试</ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>成功</RET0>
+    <RET1>失败</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Version_Manage/componentSourceCode/tc/AUMS_V/Version_Manage/util/A_VersionManageOperate.java</Path>
+</Component>

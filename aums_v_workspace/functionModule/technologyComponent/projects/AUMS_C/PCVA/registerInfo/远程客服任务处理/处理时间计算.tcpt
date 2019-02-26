@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D1BB1B7DE96B57900145AE7EF3703AB0</UUID>
+  <Target>tc.AUMS_C.PCVA.product.custom.A_DealTaskMethod.A_DealTimeMethod</Target>
+  <Desp>处理时间计算</Desp>
+  <Group>远程客服任务处理</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>StartTime</Name>
+      <Type>java.lang.String</Type>
+      <Desc>开始时间</Desc>
+    </Arg>
+    <Arg>
+      <Name>EndTime</Name>
+      <Type>java.lang.String</Type>
+      <Desc>结束时间</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>Dealtime</Name>
+      <Type>java.lang.String</Type>
+      <Desc>处理时间</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/custom/A_DealTaskMethod.java</Path>
+</Component>

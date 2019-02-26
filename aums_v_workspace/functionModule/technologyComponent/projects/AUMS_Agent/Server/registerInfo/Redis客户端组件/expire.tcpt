@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D4A2D63EA5C214E8CD42A5E22A6BC9EC</UUID>
+  <Target>tc.View.Server.A_Redis.A_expire</Target>
+  <Desp>expire</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>为key设置一个特定的过期时间，单位为秒。过期时间一到，redis将会从缓存中删除掉该key。在一个有设置过期时间的key上重复设置过期时间将会覆盖原先设置的过期时间。</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>cacheName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>缓存容器名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+    <Arg>
+      <Name>seconds</Name>
+      <Type>int</Type>
+      <Desc>过期时间</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_Redis.java</Path>
+</Component>

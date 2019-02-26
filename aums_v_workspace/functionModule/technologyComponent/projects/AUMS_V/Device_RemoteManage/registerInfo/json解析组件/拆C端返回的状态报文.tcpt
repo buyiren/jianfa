@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>289DA3050F8E02377B3A4036726113A3</UUID>
+  <Target>tc.AUMS_V.Device_RemoteManage.A_JSONMessage.unpackStatusJson</Target>
+  <Desp>拆C端返回的状态报文</Desp>
+  <Group>json解析组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>拆C端返回的状态报文，并把结果放入字典</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>字典</Desc>
+    </Arg>
+    <Arg>
+      <Name>list</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>list列表</Desc>
+    </Arg>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>cacheName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>缓存容器名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>pattern</Name>
+      <Type>java.lang.String</Type>
+      <Desc>key的映射表达式</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Device_RemoteManage/componentSourceCode/tc/AUMS_V/Device_RemoteManage/A_JSONMessage.java</Path>
+</Component>

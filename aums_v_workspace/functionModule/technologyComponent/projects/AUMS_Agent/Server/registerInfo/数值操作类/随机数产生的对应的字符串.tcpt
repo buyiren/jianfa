@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>81BB83BE951F124A2A9004C4380B3A9B</UUID>
+  <Target>tc.View.Server.A_RandomUtil.A_ParseRandom</Target>
+  <Desp>随机数产生的对应的字符串</Desp>
+  <Group>数值操作类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>bit</Name>
+      <Type>java.lang.String</Type>
+      <Desc>位数</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resultStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>随机数产生的对应的字符串</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_RandomUtil.java</Path>
+</Component>

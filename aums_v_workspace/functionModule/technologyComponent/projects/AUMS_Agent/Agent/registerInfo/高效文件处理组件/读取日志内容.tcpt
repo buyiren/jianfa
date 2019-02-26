@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D0F68C040F482CFA20E5B1B0971A83DE</UUID>
+  <Target>tc.View.Agent.A_FileUtils.A_getLog</Target>
+  <Desp>读取日志内容</Desp>
+  <Group>高效文件处理组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据传入的参数，获取相关的日志内容</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>相对于abc安装目录的文件路径</Desc>
+    </Arg>
+    <Arg>
+      <Name>logLevel</Name>
+      <Type>java.lang.String</Type>
+      <Desc>日志级别。0-全部，1-不包含debug，2-不包含debug/info，3-不包含debug/info/warn，4、不包含debug/info/warn/error，5、不包含debug/info/warn/error/fatal</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>content</Name>
+      <Type>java.lang.String</Type>
+      <Desc>日志内容</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_FileUtils.java</Path>
+</Component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7A0F379E3AA1797124220BFD13CC7452</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_AdUpdate.A_Update</Target>
+  <Desp>广告更新</Desp>
+  <Group>Parts</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>广告更新</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>devids</Name>
+      <Type>java.lang.String</Type>
+      <Desc>设备编号</Desc>
+    </Arg>
+    <Arg>
+      <Name>adtempId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>广告模板id</Desc>
+    </Arg>
+    <Arg>
+      <Name>userId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>用户ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>workdate</Name>
+      <Type>java.lang.String</Type>
+      <Desc>操作日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>worktime</Name>
+      <Type>java.lang.String</Type>
+      <Desc>操作时间</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_AdUpdate.java</Path>
+</Component>

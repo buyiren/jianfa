@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D3A5BE20F38F6552CFAE3FFF828B6265</UUID>
+  <Target>tc.AUMS_V.Version_Manage.util.A_VersionManageOperate.A_DelVersion</Target>
+  <Desp>删除版本NEW</Desp>
+  <Group>版本管理操作</Group>
+  <Level>2</Level>
+  <Style>-1</Style>
+  <Type>-1</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>删除版本NEW</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>zipFileId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>压缩文件ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>branchId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>机构ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>删除成功</RET0>
+    <RET1>删除失败</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Version_Manage/componentSourceCode/tc/AUMS_V/Version_Manage/util/A_VersionManageOperate.java</Path>
+</Component>

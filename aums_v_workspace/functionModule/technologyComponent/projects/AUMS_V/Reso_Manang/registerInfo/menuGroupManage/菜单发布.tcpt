@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>8E4B5944848A48A0F2DD718AE09DC5EE</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_menuGroupManage.A_menuRealease</Target>
+  <Desp>菜单发布</Desp>
+  <Group>menuGroupManage</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>modelId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>模板ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>userId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>创建用户</Desc>
+    </Arg>
+    <Arg>
+      <Name>devIds</Name>
+      <Type>java.lang.String</Type>
+      <Desc>设备</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_menuGroupManage.java</Path>
+</Component>

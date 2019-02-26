@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>9EA490E357E3F0AC5859A8BEE3A9395C</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_menuGroupManage.A_menuModelDel</Target>
+  <Desp>菜单模板删除</Desp>
+  <Group>menuGroupManage</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>menu_Model_Id</Name>
+      <Type>java.lang.String</Type>
+      <Desc>模板IDs</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ja</Name>
+      <Type>com.alibaba.fastjson.JSONArray</Type>
+      <Desc>删除结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_menuGroupManage.java</Path>
+</Component>

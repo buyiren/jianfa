@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D0CA7F2FE185AD9BDE4491D4C53AEFA1</UUID>
+  <Target>tc.AUMS_V.VTest.Mqtt.A_Mqtt.ImportBranchInfo</Target>
+  <Desp>发布主题</Desp>
+  <Group>MQTT服务</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>发布主题</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>topic</Name>
+      <Type>java.lang.String</Type>
+      <Desc>主题</Desc>
+    </Arg>
+    <Arg>
+      <Name>pubLishContext</Name>
+      <Type>java.lang.String</Type>
+      <Desc>发布内容</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>不可用</RET0>
+    <RET1>可用</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/VTest/componentSourceCode/tc/AUMS_V/VTest/Mqtt/A_Mqtt.java</Path>
+</Component>

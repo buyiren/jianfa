@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7FEF497ABACB5317FA026C3A595FE1D2</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_AdDelete.A_advertisementDelete</Target>
+  <Desp>广告文件删除</Desp>
+  <Group>AdDelete</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>adId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>广告ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_AdDelete.java</Path>
+</Component>

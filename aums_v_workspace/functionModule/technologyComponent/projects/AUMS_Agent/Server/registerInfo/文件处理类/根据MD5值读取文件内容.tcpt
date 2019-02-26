@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D75BC3F10E33135821D136DAC3C4342C</UUID>
+  <Target>tc.View.Server.A_FileUtils.A_getMd5File</Target>
+  <Desp>根据MD5值读取文件内容</Desp>
+  <Group>文件处理类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据MD5值读取文件内容，路径为./errdata</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>md5</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件md5值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileContent</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件内容</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_FileUtils.java</Path>
+</Component>

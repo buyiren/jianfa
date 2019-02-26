@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E28748765A7D746C5FEAA179B9B9E8A4</UUID>
+  <Target>tc.View.Agent.A_FileUtils.writeContent</Target>
+  <Desp>文件内容写入</Desp>
+  <Group>高效文件处理组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>文件存不追加写入</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>要写入的文件名</Desc>
+    </Arg>
+    <Arg>
+      <Name>strToFile</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>写入文件的字符串列表</Desc>
+    </Arg>
+    <Arg>
+      <Name>fAutoSkipLine</Name>
+      <Type>int</Type>
+      <Desc>1:列表换行写入，0：列表不换行</Desc>
+    </Arg>
+    <Arg>
+      <Name>charset</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件字符集编码名称，如果传入为null则使用默认编码</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_FileUtils.java</Path>
+</Component>

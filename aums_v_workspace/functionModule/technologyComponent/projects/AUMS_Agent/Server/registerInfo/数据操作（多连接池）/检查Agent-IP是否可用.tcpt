@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>08E905496A7C2AC0E59436490B805638</UUID>
+  <Target>tc.View.Server.A_DataBase.A_checkAgentIpIsExist</Target>
+  <Desp>检查Agent-IP是否可用</Desp>
+  <Group>数据操作（多连接池）</Group>
+  <Level>2</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>数据库连接池</Desc>
+    </Arg>
+    <Arg>
+      <Name>agent_ip</Name>
+      <Type>java.lang.String</Type>
+      <Desc>代理端ip地址</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>devid</Name>
+      <Type>java.lang.String</Type>
+      <Desc>设备id</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>异常</RET2>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DataBase.java</Path>
+</Component>

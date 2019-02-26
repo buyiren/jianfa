@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2B9F13EBA03CD3ED1E262E31D931EB45</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_menuGroupManage.A_queryMenuGroupInfo</Target>
+  <Desp>查询菜单组信息</Desp>
+  <Group>menuGroupManage</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>resArr</Name>
+      <Type>JSONArray</Type>
+      <Desc>菜单组信息</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_menuGroupManage.java</Path>
+</Component>

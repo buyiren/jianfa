@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>8E62B0EA4EC8B9634C904F08345ACB25</UUID>
+  <Target>tc.AUMS_C.PCVA.product.custom.A_ESSCEncryKey.A_UnionTranslatePin</Target>
+  <Desp>用户密码转加密</Desp>
+  <Group>密钥服务</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将一个ZPK加密的PIN密文转换为另一个ZPK加密的PIN密文，转换前后使用相同的帐号，加密算法为ANSI X9.8/X9.18</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>EsscSeverPara</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>加密机服务器参数</Desc>
+    </Arg>
+    <Arg>
+      <Name>fullKeyName1</Name>
+      <Type>java.lang.String</Type>
+      <Desc>源ZPK密钥名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>fullKeyName2</Name>
+      <Type>java.lang.String</Type>
+      <Desc>目的ZPK密钥名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>pinBlock1</Name>
+      <Type>java.lang.String</Type>
+      <Desc>源ZPK密钥PIN密文</Desc>
+    </Arg>
+    <Arg>
+      <Name>accNo</Name>
+      <Type>java.lang.String</Type>
+      <Desc>账号/卡号</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>pinBlock2</Name>
+      <Type>java.lang.String</Type>
+      <Desc>目的ZPK密钥加密PIN密文</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/custom/A_ESSCEncryKey.java</Path>
+</Component>

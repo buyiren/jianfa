@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>9CD65B164D4889CF2EC11F4E7C76E185</UUID>
+  <Target>cn.com.agree.afa.jcomponent.WebSocketLsrServiceClient.asyncRequest</Target>
+  <Desp>websocket同步请求</Desp>
+  <Group>Websocket操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>websocket同步请求</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>srvIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>requestData</Name>
+      <Type>java.lang.String</Type>
+      <Desc>请求内容</Desc>
+    </Arg>
+    <Arg>
+      <Name>timeoutMillis</Name>
+      <Type>long</Type>
+      <Desc>请求超时时间(毫秒)</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>future</Name>
+      <Type>java.lang.String</Type>
+      <Desc>返回结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/lib/afa-jcomponent-2.3.jar</Path>
+</Component>

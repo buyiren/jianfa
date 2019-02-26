@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2B63F5D2273A57655D510008332F7EA7</UUID>
+  <Target>tc.bank.product.B_DBUnityRptOper.B_Dyncondlist_Create</Target>
+  <Desp>组合条件查询Dyncondlist创建</Desp>
+  <Group>数据库操作</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>组合条件查询Dyncondlist创建</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>inContext</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>请求容器</Desc>
+    </Arg>
+    <Arg>
+      <Name>ignoreValue</Name>
+      <Type>java.lang.String</Type>
+      <Desc>忽略值</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>变量赋值列表,值为string时赋值等号，值为list时赋值in，如：[value1,value2]</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_DBUnityRptOper.java</Path>
+</Component>

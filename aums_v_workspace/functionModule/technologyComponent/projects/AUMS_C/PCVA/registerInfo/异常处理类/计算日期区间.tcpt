@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E7DE38F284901894A1F3FF69894D5332</UUID>
+  <Target>tc.AUMS_C.PCVA.product.custom.A_ExcpTrade.A_CalculateDate</Target>
+  <Desp>计算日期区间</Desp>
+  <Group>异常处理类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据当前日期,计算区间里的日期列表，并返回总天数</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>NowDate</Name>
+      <Type>java.lang.String</Type>
+      <Desc>当前日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>LongDay</Name>
+      <Type>int</Type>
+      <Desc>区间天数</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>DateList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>区间日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>TotalDay</Name>
+      <Type>int</Type>
+      <Desc>总天数</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/custom/A_ExcpTrade.java</Path>
+</Component>

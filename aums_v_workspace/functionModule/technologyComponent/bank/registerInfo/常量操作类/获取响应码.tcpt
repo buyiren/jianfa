@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>AB1C8656A60DFBB0BDA8F40466F55A90</UUID>
+  <Target>tc.bank.product.B_ConstantOperate.B_GetRespCode</Target>
+  <Desp>获取响应码</Desp>
+  <Group>常量操作类</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>按入参从错误码常量类里获取常量值</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>constant</Name>
+      <Type>java.lang.String</Type>
+      <Desc>常量名称</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ReturnCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>常量值</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_ConstantOperate.java</Path>
+</Component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6E3376E744A6A9522C7E7CA6602F52D0</UUID>
+  <Target>tc.View.Agent.A_DevUtils.A_httpClientGet</Target>
+  <Desp>http客户端get方式请求</Desp>
+  <Group>与机具交互</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>Agent与C端机具进行通讯，采用http协议+json报文</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>reqUrl</Name>
+      <Type>java.lang.String</Type>
+      <Desc>请求url</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rspJson</Name>
+      <Type>java.lang.String</Type>
+      <Desc>应答json串</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_DevUtils.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>694DE278D7CED79430ACCAE72F5C1C24</UUID>
+  <Target>tc.AUMS_V.Device_RemoteManage.A_JSONMessage.strToBean</Target>
+  <Desp>json串转换javaBean</Desp>
+  <Group>json解析组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>json字符串转换为javaBean</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>className</Name>
+      <Type>java.lang.String</Type>
+      <Desc>完整的类的名称，要包含包名</Desc>
+    </Arg>
+    <Arg>
+      <Name>jsonStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>json字符串</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>obj</Name>
+      <Type>Object</Type>
+      <Desc>javaBean</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Device_RemoteManage/componentSourceCode/tc/AUMS_V/Device_RemoteManage/A_JSONMessage.java</Path>
+</Component>

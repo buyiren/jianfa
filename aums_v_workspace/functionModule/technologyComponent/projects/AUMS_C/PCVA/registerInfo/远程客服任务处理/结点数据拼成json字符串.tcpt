@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>41E5378E72BC18851F813714E9DCBDFA</UUID>
+  <Target>tc.AUMS_C.PCVA.product.custom.A_DealTaskMethod.B_BusJsonData</Target>
+  <Desp>结点数据拼成json字符串</Desp>
+  <Group>远程客服任务处理</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据上送的结点数据拼成json字符串</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>reqdata</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>请求容器数据</Desc>
+    </Arg>
+    <Arg>
+      <Name>nodeid</Name>
+      <Type>java.lang.String</Type>
+      <Desc>结点ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>busistep</Name>
+      <Type>java.lang.String</Type>
+      <Desc>业务步骤</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rspstrdata</Name>
+      <Type>java.lang.String</Type>
+      <Desc>返回的json串</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/custom/A_DealTaskMethod.java</Path>
+</Component>

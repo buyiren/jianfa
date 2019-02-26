@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7A1FC9FE93F12C20EDDB74EEB07ADEA8</UUID>
+  <Target>tc.View.Agent.A_FileUtils.A_modifyABCproperties</Target>
+  <Desp>修改abc配置通用组件</Desp>
+  <Group>高效文件处理组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据指定的配置key和值，替换abc.properties中的相应内容</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>configKey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>配置项</Desc>
+    </Arg>
+    <Arg>
+      <Name>configValue</Name>
+      <Type>java.lang.String</Type>
+      <Desc>配置值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_FileUtils.java</Path>
+</Component>

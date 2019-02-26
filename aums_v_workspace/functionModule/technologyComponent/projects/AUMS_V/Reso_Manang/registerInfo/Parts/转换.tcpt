@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2120F027FEDD309E0F73B88C42384B49</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_ListToString.A_parse</Target>
+  <Desp>转换</Desp>
+  <Group>Parts</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>转换类型</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>list</Name>
+      <Type>java.util.List</Type>
+      <Desc>传入集合格式</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>string</Name>
+      <Type>java.lang.String</Type>
+      <Desc>输入字符串格式</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_ListToString.java</Path>
+</Component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>8A2D9A2359CC6E2F084D79F5322B9B19</UUID>
+  <Target>tc.AUMS_C.PCVA.product.custom.A_ARBUtils.A_GetImageStr</Target>
+  <Desp>图片转换为base64字符串</Desp>
+  <Group>远程客服</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>imgFile</Name>
+      <Type>java.lang.String</Type>
+      <Desc>图片名称</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>data</Name>
+      <Type>java.lang.String</Type>
+      <Desc>base64图片数据</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/custom/A_ARBUtils.java</Path>
+</Component>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>976D24E99F20A329592B8BCB96CACB09</UUID>
+  <Target>tc.View.Server.A_DevWarn.A_DeviceStat</Target>
+  <Desp>设备预警状态处理</Desp>
+  <Group>预警</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>设备预警状态处理</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>DeviceId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>设备ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>ModelStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>模块列表</Desc>
+    </Arg>
+    <Arg>
+      <Name>policyid</Name>
+      <Type>java.lang.String</Type>
+      <Desc>策略ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ExceptionFlag</Name>
+      <Type>java.lang.String</Type>
+      <Desc>异常标识（0:无异常 1：有异常）</Desc>
+    </Arg>
+    <Arg>
+      <Name>ExceptionStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>异常信息</Desc>
+    </Arg>
+    <Arg>
+      <Name>brno</Name>
+      <Type>java.lang.String</Type>
+      <Desc>网点号</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DevWarn.java</Path>
+</Component>
