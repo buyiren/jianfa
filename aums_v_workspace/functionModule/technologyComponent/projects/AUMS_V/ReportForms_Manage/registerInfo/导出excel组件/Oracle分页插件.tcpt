@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>405EE5FFA105122E68FD49B3BC08968C</UUID>
+  <Target>tc.AUMS_V.ReportForms_Manage.excel.OraclePagination.A_ExcelPOI</Target>
+  <Desp>Oracle分页插件</Desp>
+  <Group>导出excel组件</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>QueryPageNo</Name>
+      <Type>java.lang.Integer</Type>
+      <Desc>第几页</Desc>
+    </Arg>
+    <Arg>
+      <Name>QueryRowNum</Name>
+      <Type>java.lang.Integer</Type>
+      <Desc>每页多少行</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rn</Name>
+      <Type>java.lang.Integer</Type>
+      <Desc>起始行</Desc>
+      <DefaultParam>1</DefaultParam>
+    </Arg>
+    <Arg>
+      <Name>rownum</Name>
+      <Type>java.lang.Integer</Type>
+      <Desc>终止行</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/ReportForms_Manage/componentSourceCode/tc/AUMS_V/ReportForms_Manage/excel/OraclePagination.java</Path>
+</Component>

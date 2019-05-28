@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>AE9B0626E3CA3F7BECDB2B562CC6A9AD</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_menuGroupManage.A_queryModelInfo</Target>
+  <Desp>查询菜单模板详细信息</Desp>
+  <Group>menuGroupManage</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>模板信息</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tableData</Name>
+      <Type>com.alibaba.fastjson.JSONArray</Type>
+      <Desc>查询结果集</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_menuGroupManage.java</Path>
+</Component>

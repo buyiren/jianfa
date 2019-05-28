@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>149CDE1A11A49011183D38473AED284B</UUID>
+  <Target>tc.AUMS_V.Warning_Manage.Warning_Manage.Parts.A_WarningPolicyQuery.A_DelWarningPolicy</Target>
+  <Desp>删除预警策略</Desp>
+  <Group>WarningPolicyQuery</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>policyID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>策略ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>obj</Name>
+      <Type>com.alibaba.fastjson.JSONObject</Type>
+      <Desc>删除成功与否</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Warning_Manage/componentSourceCode/tc/AUMS_V/Warning_Manage/Warning_Manage/Parts/A_WarningPolicyQuery.java</Path>
+</Component>

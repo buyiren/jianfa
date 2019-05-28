@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C97D600F36C17D5E6CD3C185FF9B67EA</UUID>
+  <Target>tc.View.Server.A_DataBase.A_jvmUsageAlert</Target>
+  <Desp>jvm占用率预警</Desp>
+  <Group>数据操作（多连接池）</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>扫描T_JVM_INFO表，根据T_JVM_CONF表中的配置项（JVM_WARN_VALUE字段）判断并处理预警信息</ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>数据库连接池</Desc>
+    </Arg>
+    <Arg>
+      <Name>JVM_SCAN_SPACE</Name>
+      <Type>java.lang.String</Type>
+      <Desc>采集间隔（单位：秒）</Desc>
+    </Arg>
+    <Arg>
+      <Name>JVM_WARN_VALUE</Name>
+      <Type>java.lang.String</Type>
+      <Desc>JVM占用内存预警值（单位%）</Desc>
+    </Arg>
+    <Arg>
+      <Name>JVM_RISE_RATIO_VALUE</Name>
+      <Type>java.lang.String</Type>
+      <Desc>JVM占用内存比上升率（单位%/秒）预警值</Desc>
+    </Arg>
+    <Arg>
+      <Name>JVM_RISE_CON</Name>
+      <Type>java.lang.String</Type>
+      <Desc>触发上升率预警判断条件（单位 %）</Desc>
+    </Arg>
+    <Arg>
+      <Name>DUMP_PATH</Name>
+      <Type>java.lang.String</Type>
+      <Desc>dump文件生成路径</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DataBase.java</Path>
+</Component>

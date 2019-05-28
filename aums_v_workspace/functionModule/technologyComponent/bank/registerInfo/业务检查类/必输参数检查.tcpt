@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>B255E5082A3107955CDE14B6BA399209</UUID>
+  <Target>tc.bank.pcva.B_BusiCheck.B_CheckValue</Target>
+  <Desp>必输参数检查</Desp>
+  <Group>业务检查类</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>reqdict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>检查容器</Desc>
+    </Arg>
+    <Arg>
+      <Name>reqlist</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>检查集如[[字段,长度],["workdate","8"]]</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/pcva/B_BusiCheck.java</Path>
+</Component>

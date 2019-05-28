@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>3C363A34D068AA6DE589A2778C243427</UUID>
+  <Target>tc.AUMS_C.PCVA.product.custom.A_ESSCEncryKey.A_UnionGenerateKey</Target>
+  <Desp>生成工作密钥</Desp>
+  <Group>密钥服务</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>生成指定的密钥，替换密钥库中的密钥值；并输出ZMK加密的密钥密文。要生成的密钥必须已在密钥库中定义。ZMK和要生成的密钥属于同一节点。</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>EsscSeverPara</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>加密机服务器参数</Desc>
+    </Arg>
+    <Arg>
+      <Name>fullKeyName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>密钥全名</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>keyValue</Name>
+      <Type>java.lang.String</Type>
+      <Desc>密钥密文（ZMK加密）</Desc>
+    </Arg>
+    <Arg>
+      <Name>checkValue</Name>
+      <Type>java.lang.String</Type>
+      <Desc>密钥校验值（密钥加密16个‘0’的结果）</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/custom/A_ESSCEncryKey.java</Path>
+</Component>

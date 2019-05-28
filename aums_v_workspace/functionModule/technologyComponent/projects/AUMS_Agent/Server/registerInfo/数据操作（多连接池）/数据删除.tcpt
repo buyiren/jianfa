@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>B9C78A37458BC4C70A7AE53A5628BCA7</UUID>
+  <Target>tc.View.Server.A_DataBase.P_DB_DMLDel</Target>
+  <Desp>数据删除</Desp>
+  <Group>数据操作（多连接池）</Group>
+  <Level>2</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>删除指定条件的记录,条件语句[[列名,操作符,值,后边的条件关系/None], ...],每个列表体现出的条件都是一个()单元</ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>连接池名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>tablename</Name>
+      <Type>java.lang.String</Type>
+      <Desc>表名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>condition</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>条件语句list</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>Object</Type>
+      <Desc>提交标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>ver</Name>
+      <Type>java.lang.String</Type>
+      <Desc>版本日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>area</Name>
+      <Type>java.lang.String</Type>
+      <Desc>适用区域</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败,数据库异常</RET0>
+    <RET2>删除影响的笔数为0</RET2>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DataBase.java</Path>
+</Component>

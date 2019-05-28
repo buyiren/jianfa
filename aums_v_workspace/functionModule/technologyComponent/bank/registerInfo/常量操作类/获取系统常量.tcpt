@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>14B02B253135B87B95600EB4557B1576</UUID>
+  <Target>tc.bank.product.B_ConstantOperate.B_GetSysConstant</Target>
+  <Desp>获取系统常量</Desp>
+  <Group>常量操作类</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip> 按入参从系统参数常量类里获取常量值</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>constant</Name>
+      <Type>java.lang.String</Type>
+      <Desc>常量名称</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ReturnCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>常量值</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_ConstantOperate.java</Path>
+</Component>

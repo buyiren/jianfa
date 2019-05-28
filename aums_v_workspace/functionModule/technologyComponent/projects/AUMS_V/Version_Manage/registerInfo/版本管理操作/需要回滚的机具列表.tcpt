@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E3A6890C89065A657C6F8DFE1E5604DC</UUID>
+  <Target>tc.AUMS_V.Version_Manage.util.A_VersionManageOperate.A_RollbackDevList</Target>
+  <Desp>需要回滚的机具列表</Desp>
+  <Group>版本管理操作</Group>
+  <Level>2</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>需要回滚的机具列表</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>policyId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>版本更新策略ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>所有的行数据JavaList</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>无满足条件记录</RET2>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Version_Manage/componentSourceCode/tc/AUMS_V/Version_Manage/util/A_VersionManageOperate.java</Path>
+</Component>

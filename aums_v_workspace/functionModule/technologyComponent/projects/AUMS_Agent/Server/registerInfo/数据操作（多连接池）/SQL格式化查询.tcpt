@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D67F61ADA41C478D2E327E551D479363</UUID>
+  <Target>tc.View.Server.A_DataBase.P_DB_SQLSel</Target>
+  <Desp>SQL格式化查询</Desp>
+  <Group>数据操作（多连接池）</Group>
+  <Level>2</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>根据平台数据操作sql信息表afa_asst_dataprocsql中的busidatakey，获取组成完整sql语句要素信息</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>连接池名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>busidatakey</Name>
+      <Type>java.lang.String</Type>
+      <Desc>sql关键字</Desc>
+    </Arg>
+    <Arg>
+      <Name>ver</Name>
+      <Type>java.lang.String</Type>
+      <Desc>版本日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>area</Name>
+      <Type>java.lang.String</Type>
+      <Desc>适用区域</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>_Result_</Name>
+      <Type>java.lang.String</Type>
+      <Desc>格式化sql</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败,数据库异常</RET0>
+    <RET2>无满足条件记录</RET2>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DataBase.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>95B74DCD044EF7A53D3790607CC9BFC5</UUID>
+  <Target>tc.platform.P_Redis.P_hvals</Target>
+  <Desp>hvals</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>哈希集中的值的列表，当 key 指定的哈希集不存在时返回空列表</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>values</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>哈希集中的字段值列表</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_Redis.java</Path>
+</Component>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>03404536394B8009D292EBC1B898C2FA</UUID>
+  <Target>tc.View.Server.A_DataBase.P_DB_ExecSQL</Target>
+  <Desp>SQL语句执行</Desp>
+  <Group>数据操作（多连接池）</Group>
+  <Level>2</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>执行传入的sql语句,执行影响的条数放到返回结果的list[3][0]中,返回值有3个</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>poolName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>连接池名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>sqlstr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>执行的SQL语句</Desc>
+    </Arg>
+    <Arg>
+      <Name>commitFlg</Name>
+      <Type>Object</Type>
+      <Desc>事务提交标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>ver</Name>
+      <Type>java.lang.String</Type>
+      <Desc>版本日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>area</Name>
+      <Type>java.lang.String</Type>
+      <Desc>适用区域</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>执行失败</RET0>
+    <RET2>影响笔数为0</RET2>
+    <RET1>执行成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_DataBase.java</Path>
+</Component>

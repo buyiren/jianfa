@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7522351DCAD59B6D6FB823946271BBEB</UUID>
+  <Target>tc.AUMS_V.Param_Manage.ParamManage.A_ParamManageOperate.A_BindParamInfo</Target>
+  <Desp>参数绑定</Desp>
+  <Group>参数管理操作</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>参数绑定</ToolTip>
+  <InArgs>
+    <Total>6</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>paramReleaseType</Name>
+      <Type>java.lang.String</Type>
+      <Desc>参数发布类型</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramID</Name>
+      <Type>java.lang.String</Type>
+      <Desc>参数ID</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramType</Name>
+      <Type>java.lang.String</Type>
+      <Desc>参数所属设备形式</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramApp</Name>
+      <Type>java.lang.String</Type>
+      <Desc>参数所属客户端程序</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramAppInfoList</Name>
+      <Type>JavaList</Type>
+      <Desc>参数所关联客户端程序列表</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramDevInfoList</Name>
+      <Type>JavaList</Type>
+      <Desc>参数所关联设备列表</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>参数绑定设备失败</RET0>
+    <RET1>参数绑定设备成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Param_Manage/componentSourceCode/tc/AUMS_V/Param_Manage/ParamManage/A_ParamManageOperate.java</Path>
+</Component>

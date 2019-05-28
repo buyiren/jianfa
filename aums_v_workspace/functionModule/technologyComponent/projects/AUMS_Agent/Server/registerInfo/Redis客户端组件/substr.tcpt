@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>E0461E47AF04F47133CD86636235BB11</UUID>
+  <Target>tc.View.Server.A_Redis.A_substr</Target>
+  <Desp>substr</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>返回start - end 之间的子字符串(start 和 end处的字符也包括在内)</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>cacheName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>缓存容器名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+    <Arg>
+      <Name>start</Name>
+      <Type>int</Type>
+      <Desc>开始位置</Desc>
+    </Arg>
+    <Arg>
+      <Name>end</Name>
+      <Type>int</Type>
+      <Desc>结束位置</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>subStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>子字符串</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_Redis.java</Path>
+</Component>

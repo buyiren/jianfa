@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>11E35DFDE59E9D8FC6A1F572A47F1FB7</UUID>
+  <Target>tc.AUMS_C.PCVA.product.PCVA_Tools.PostWebServiceClient</Target>
+  <Desp>Http请求WebService</Desp>
+  <Group>P端工具类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>Http请求WebService</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>SoapUrl</Name>
+      <Type>java.lang.String</Type>
+      <Desc>通讯url</Desc>
+    </Arg>
+    <Arg>
+      <Name>SoapContext</Name>
+      <Type>java.lang.String</Type>
+      <Desc>Soap报文体</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ReturnSoap</Name>
+      <Type>java.lang.String</Type>
+      <Desc>返回Soap报文</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/PCVA_Tools.java</Path>
+</Component>

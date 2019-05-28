@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>679831E82EE7C57C87CDB38C7C8C9BBA</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_AdFileUpload.A_adUpdSel</Target>
+  <Desp>广告修改查询机具信息</Desp>
+  <Group>AdFileUpload</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>adManageId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>广告ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tableData</Name>
+      <Type>com.alibaba.fastjson.JSONArray</Type>
+      <Desc>受影响的机具信息</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_AdFileUpload.java</Path>
+</Component>

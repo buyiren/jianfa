@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>1F0E4E55ED972F830288B3458D22EFCF</UUID>
+  <Target>tc.platform.P_Redis.P_decrBy</Target>
+  <Desp>decrBy</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将指定key的值减少某个值</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+    <Arg>
+      <Name>value</Name>
+      <Type>long</Type>
+      <Desc>值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>newValue</Name>
+      <Type>long</Type>
+      <Desc>减少后的新值</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_Redis.java</Path>
+</Component>

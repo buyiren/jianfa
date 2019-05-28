@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>8F9AA711B45ABD91E346DD0031AF755E</UUID>
+  <Target>tc.AUMS_Agent.Agent.A_AgentFileOperate.A_getAR_config</Target>
+  <Desp>读取arouter_agent.conf信息</Desp>
+  <Group>代理端文件操作</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>ar_conf</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>配置信息</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/AUMS_Agent/Agent/A_AgentFileOperate.java</Path>
+</Component>

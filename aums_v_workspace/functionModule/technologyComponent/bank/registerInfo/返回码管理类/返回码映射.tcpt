@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>B482E06A8EA1A18F458E66D0885495C6</UUID>
+  <Target>tc.bank.pcva.B_RespCodeAdm.B_RespCodemap</Target>
+  <Desp>返回码映射</Desp>
+  <Group>返回码管理类</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>按入参查询响应码信息表，将目标响应码和响应信息作为出参返回</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>req</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>入参字典</Desc>
+    </Arg>
+    <Arg>
+      <Name>responseCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>响应码</Desc>
+    </Arg>
+    <Arg>
+      <Name>sourceSys</Name>
+      <Type>java.lang.String</Type>
+      <Desc>源系统</Desc>
+    </Arg>
+    <Arg>
+      <Name>targetSys</Name>
+      <Type>java.lang.String</Type>
+      <Desc>目标系统</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>targetRspCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>目标响应码</Desc>
+    </Arg>
+    <Arg>
+      <Name>responseDesc</Name>
+      <Type>java.lang.String</Type>
+      <Desc>响应描述</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/pcva/B_RespCodeAdm.java</Path>
+</Component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Flag>
+	
+  <Version>1.0</Version>
+	
+  <Name/>
+	
+  <Desc>包括文件浏览、文件抓取、文件上传或覆盖</Desc>
+</Flag>

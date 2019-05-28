@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>112463565FED5CA15C0AD2F7F4E7D817</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.TempDel.A_choose</Target>
+  <Desp>tempDel</Desp>
+  <Group>Parts</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>判断是否可以删除广告模板</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tempId</Name>
+      <Type>Object</Type>
+      <Desc>模板Id</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/TempDel.java</Path>
+</Component>

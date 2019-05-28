@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>0E0213AB88A4EB6F336A0A6920B756C7</UUID>
+  <Target>tc.bank.product.B_ConstantOperate.B_SysConstantCompare</Target>
+  <Desp>系统常量比较</Desp>
+  <Group>常量操作类</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>入参常量名称和常量值  在常量类中找是否一致  一致返回1 不一致返回0</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>constantStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>常量名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>constantVal</Name>
+      <Type>java.lang.String</Type>
+      <Desc>常量值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_ConstantOperate.java</Path>
+</Component>

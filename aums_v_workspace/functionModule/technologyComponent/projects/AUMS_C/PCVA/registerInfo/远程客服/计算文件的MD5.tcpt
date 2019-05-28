@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D215AED7E3E3A8E29753EA3DF92EBC17</UUID>
+  <Target>tc.AUMS_C.PCVA.product.custom.A_ARBUtils.A_FileMd5Calculate</Target>
+  <Desp>计算文件的MD5</Desp>
+  <Group>远程客服</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>计算文件的MD5</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>FilePath</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件路径</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>FileMd5</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件的Md5值</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_C/PCVA/componentSourceCode/tc/AUMS_C/PCVA/product/custom/A_ARBUtils.java</Path>
+</Component>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>8F5457E0CD9F56DFC7BC9E3AB20301A5</UUID>
+  <Target>tc.AUMS_V.Warning_Manage.Warning_Manage.Parts.A_MessageMainTain.A_LoadMessageMaintainTableDate</Target>
+  <Desp>初始化短信联系人表格</Desp>
+  <Group>MessageMainTain</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tableData</Name>
+      <Type>com.alibaba.fastjson.JSONArray</Type>
+      <Desc>短信联系人查询结果</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Warning_Manage/componentSourceCode/tc/AUMS_V/Warning_Manage/Warning_Manage/Parts/A_MessageMainTain.java</Path>
+</Component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>4CFF5FD0A57DA2112521226C07D524DD</UUID>
+  <Target>tc.bank.product.B_SysParam.B_GetSysParamByRedis</Target>
+  <Desp>获取参数信息从redis</Desp>
+  <Group>系统参数类组件</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>按入参查询系统参数表，将参数值作为出参返回</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>moduleCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>模块代码</Desc>
+    </Arg>
+    <Arg>
+      <Name>transCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>交易代码</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramKeyName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>参数名称</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>paramValue</Name>
+      <Type>java.lang.String</Type>
+      <Desc>参数值</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_SysParam.java</Path>
+</Component>

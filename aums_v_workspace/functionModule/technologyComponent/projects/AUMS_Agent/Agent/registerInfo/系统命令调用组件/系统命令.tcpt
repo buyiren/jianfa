@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>2C222150FC31AB2A6BB1FD0C55E5FC47</UUID>
+  <Target>tc.View.Agent.utils.B_RuntimeUtil.B_getRunStdOutInfo</Target>
+  <Desp>系统命令</Desp>
+  <Group>系统命令调用组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>调用系统命令行获取标准输出流信息</ToolTip>
+  <InArgs>
+    <Total>5</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>command</Name>
+      <Type>java.lang.String</Type>
+      <Desc>调用的系统命令行</Desc>
+    </Arg>
+    <Arg>
+      <Name>envp</Name>
+      <Type>java.lang.String[]</Type>
+      <Desc>环境变量数组</Desc>
+    </Arg>
+    <Arg>
+      <Name>dirPath</Name>
+      <Type>java.lang.String</Type>
+      <Desc>执行命令行的工作目录</Desc>
+    </Arg>
+    <Arg>
+      <Name>isAsyn</Name>
+      <Type>boolean</Type>
+      <Desc>同步异步标志</Desc>
+    </Arg>
+    <Arg>
+      <Name>waitTime</Name>
+      <Type>int</Type>
+      <Desc>异步等待时间 (秒)</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>res</Name>
+      <Type>java.lang.String</Type>
+      <Desc>系统命令行执行返回标准输出信息</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/View/Agent/componentSourceCode/tc/View/Agent/utils/B_RuntimeUtil.java</Path>
+</Component>

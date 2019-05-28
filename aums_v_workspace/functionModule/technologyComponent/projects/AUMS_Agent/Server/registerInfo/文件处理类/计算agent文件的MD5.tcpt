@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>BBA8EF08DBD1EE9233231A919F1DFEEC</UUID>
+  <Target>tc.View.Server.A_FileUtils.A_createFileMD5</Target>
+  <Desp>计算agent文件的MD5</Desp>
+  <Group>文件处理类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>遍历入餐指定的目录下文件，计算出MD5值，返回dict对象。格式如{'projects/AAAA/apps/server/tech_component/agent.modConnectionUrl.jar':'9bbf55cf4fd4b37189cdaf1098678f2d','projects/AAAA/apps/server/tech_component/agent.watchLog.jar':'110c71f506c594a0110189a082458106'}</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>path</Name>
+      <Type>java.lang.String</Type>
+      <Desc>遍历的路径,如./update/trade，./update/component</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileInfoDict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>文件信息的字典</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_FileUtils.java</Path>
+</Component>

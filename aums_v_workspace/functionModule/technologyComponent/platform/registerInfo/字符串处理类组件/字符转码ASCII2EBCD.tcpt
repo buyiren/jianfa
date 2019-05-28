@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>5D2DF7E2232BB234F5FC135FCF07D3B2</UUID>
+  <Target>tc.platform.P_String.P_Str_ASCII2EBCD</Target>
+  <Desp>字符转码ASCII2EBCD</Desp>
+  <Group>字符串处理类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将输入的字典容器中所有key的值字符转码ASCII2EBCD</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>data_context</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>数据容器</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>asciiinfo</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>目标容器</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>处理失败</RET0>
+    <RET1>处理成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_String.java</Path>
+</Component>

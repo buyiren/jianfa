@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Root>
+  <UUID>FCA33DAD397F42BDAB707B9718053079</UUID>
+  <DateInfo>
+    <CreateDate>2018-02-28 02:45</CreateDate>
+    <ModifyDate>2018-02-28 02:46</ModifyDate>
+  </DateInfo>
+  <NodeMaxnimum>60</NodeMaxnimum>
+  <Regulation>
+    <Step>
+      <UUID>53DF7BACF56C48659503CBC16AEDE157</UUID>
+      <Quote>0</Quote>
+      <Type>5</Type>
+      <Id>1</Id>
+      <Desp>PublicServerTest</Desp>
+      <RefImpl>PublicServerTest</RefImpl>
+      <ToolTip></ToolTip>
+      <Remarks>0</Remarks>
+      <Skip>
+        <Enabled>0</Enabled>
+        <Branch>1</Branch>
+      </Skip>
+      <HasSql>false</HasSql>
+      <Constraint>
+        <Location>135,111</Location>
+        <Size>160,46</Size>
+      </Constraint>
+      <Security>
+        <Readonly>6C6D0C4B72D7A753</Readonly>
+        <TokenLevel>43F99B1D6F925B91</TokenLevel>
+      </Security>
+      <SourceConnections/>
+      <Terminals>
+        <Terminal>
+          <Name>0</Name>
+          <Desp>失败</Desp>
+        </Terminal>
+        <Terminal>
+          <Name>1</Name>
+          <Desp>成功</Desp>
+        </Terminal>
+      </Terminals>
+      <True>0</True>
+      <False>0</False>
+    </Step>
+  </Regulation>
+</Root>

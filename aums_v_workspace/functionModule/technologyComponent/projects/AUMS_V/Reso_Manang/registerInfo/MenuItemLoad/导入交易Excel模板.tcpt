@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>69369CBE2754CE142F20C1A77CF6C1ED</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_MenuItemLoad.A_tradeExcelLoad</Target>
+  <Desp>导入交易Excel模板</Desp>
+  <Group>MenuItemLoad</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>fileName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件名</Desc>
+    </Arg>
+    <Arg>
+      <Name>fileUrl</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件路径</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_MenuItemLoad.java</Path>
+</Component>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>D4581361D16584EC5FE5FE7D2546BB27</UUID>
+  <Target>tc.AUMS_V.Warning_Manage.Warning_Manage.Parts.A_WarningPolicyQuery.A_LoadPolicyFunctionComBox</Target>
+  <Desp>表达式下拉框</Desp>
+  <Group>WarningPolicyQuery</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>comBox</Name>
+      <Type>com.alibaba.fastjson.JSONArray</Type>
+      <Desc>表达式</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Warning_Manage/componentSourceCode/tc/AUMS_V/Warning_Manage/Warning_Manage/Parts/A_WarningPolicyQuery.java</Path>
+</Component>

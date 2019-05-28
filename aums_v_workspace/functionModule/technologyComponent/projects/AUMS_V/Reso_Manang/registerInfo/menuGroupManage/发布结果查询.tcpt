@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C96323345AEB875D6A3A063AD1D1FAC9</UUID>
+  <Target>tc.AUMS_V.Reso_Manang.Parts.A_menuGroupManage.A_ReleaseResultQuery</Target>
+  <Desp>发布结果查询</Desp>
+  <Group>menuGroupManage</Group>
+  <Level>2</Level>
+  <Style>0</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>rn</Name>
+      <Type>int</Type>
+      <Desc>起始行</Desc>
+    </Arg>
+    <Arg>
+      <Name>rownum</Name>
+      <Type>int</Type>
+      <Desc>终止行</Desc>
+    </Arg>
+    <Arg>
+      <Name>branId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>机构ID</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tableData</Name>
+      <Type>com.alibaba.fastjson.JSONObject</Type>
+      <Desc>查询数据</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>1</Total>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Reso_Manang/componentSourceCode/tc/AUMS_V/Reso_Manang/Parts/A_menuGroupManage.java</Path>
+</Component>

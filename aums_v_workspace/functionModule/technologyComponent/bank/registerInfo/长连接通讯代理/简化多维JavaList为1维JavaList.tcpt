@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>817BEE389418CC14BB4F8D204628AABB</UUID>
+  <Target>tc.bank.product.B_LongSockCli.B_SimplifyList</Target>
+  <Desp>简化多维JavaList为1维JavaList</Desp>
+  <Group>长连接通讯代理</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>比如将JavaList对象[{'DevId':'1','DevIp':'10.10.10.1','DevCashboxBrno':'5678'},{'DevId':'2','DevIp':'10.10.10.2','DevCashboxBrno':'5679'}]转化为JavaList对象：['10.10.10.1','10.10.10.2']</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>inputList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>多维JavaList</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>要提取的key</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>outputList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>1维的JavaList</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_LongSockCli.java</Path>
+</Component>

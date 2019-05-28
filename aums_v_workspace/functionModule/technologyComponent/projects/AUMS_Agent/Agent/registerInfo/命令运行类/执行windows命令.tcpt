@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>4CECB68ABDC6C596343E4AA745926CFC</UUID>
+  <Target>tc.View.Agent.A_RuntimeUtil.B_getRunCommon</Target>
+  <Desp>执行windows命令</Desp>
+  <Group>命令运行类</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>执行windows命令</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>common</Name>
+      <Type>java.lang.String</Type>
+      <Desc>命令</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_RuntimeUtil.java</Path>
+</Component>

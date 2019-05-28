@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>AC7F2964E7454D26FB10751342C29648</UUID>
+  <Target>tc.platform.P_EBCD.ASCII2BCD</Target>
+  <Desp>ASCII编码转BCD编码</Desp>
+  <Group>EBCD编码转换类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>ASCII编码转BCD编码</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>srcStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>源ASCII编码的数据</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>desBytes</Name>
+      <Type>byte</Type>
+      <Desc>BCD编码的数据</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_EBCD.java</Path>
+</Component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>EFA9DAAFDCB8A6711B4DA783DDDD335E</UUID>
+  <Target>tc.AUMS_V.Device_RemoteManage.A_JSONMessage.strToDict</Target>
+  <Desp>json串转换javaDict</Desp>
+  <Group>json解析组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>json字符串转换平台字典类型对象</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>dict</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>字典</Desc>
+    </Arg>
+    <Arg>
+      <Name>jsonStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>json串的byte数组</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Device_RemoteManage/componentSourceCode/tc/AUMS_V/Device_RemoteManage/A_JSONMessage.java</Path>
+</Component>

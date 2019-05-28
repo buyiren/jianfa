@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C78ABE59DC379F539128F53B603E5F4F</UUID>
+  <Target>tc.platform.P_Redis.P_getSet</Target>
+  <Desp>getSet</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>自动将key对应到value并且返回原来key对应的value。如果key存在但是对应的value不是字符串，就返回错误</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+    <Arg>
+      <Name>value</Name>
+      <Type>java.lang.String</Type>
+      <Desc>值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>oldValue</Name>
+      <Type>java.lang.String</Type>
+      <Desc>原值</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_Redis.java</Path>
+</Component>

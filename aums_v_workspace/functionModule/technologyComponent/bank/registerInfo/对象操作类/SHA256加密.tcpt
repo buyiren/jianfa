@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>C50963DE9CCE7F5461F98A548A71E9A8</UUID>
+  <Target>tc.bank.product.B_ObjectOperate.getSHA256StrJava</Target>
+  <Desp>SHA256加密</Desp>
+  <Group>对象操作类</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>SHA256加密</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>origString</Name>
+      <Type>java.lang.String</Type>
+      <Desc>字符串</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>SHA256String</Name>
+      <Type>java.lang.String</Type>
+      <Desc>加密后字符串</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_ObjectOperate.java</Path>
+</Component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>0A7173A156010A3734EDF59008A9BBC0</UUID>
+  <Target>tc.platform.P_Json.P_strToList</Target>
+  <Desp>json串转javaList</Desp>
+  <Group>json转换类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将入参的json字符串转换为JavaList对象,入参字符串必须符合jsonArray规范</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>jsonStr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>json字符串</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tarList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>转换后的JavaList</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_Json.java</Path>
+</Component>

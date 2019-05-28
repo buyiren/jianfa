@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>3B7EF5D745FB9FAFEFAFB29A7C4372F1</UUID>
+  <Target>tc.View.Server.A_LogGather.A_tellerLogGatherer</Target>
+  <Desp>采集柜员日志</Desp>
+  <Group>日志采集组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>采集abs集群的柜员日志</ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Server/componentSourceCode/tc/View/Server/A_LogGather.java</Path>
+</Component>

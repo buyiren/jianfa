@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6E382331F21306C661A617DD52D78C85</UUID>
+  <Target>tc.bank.product.B_Redis.B_sismember</Target>
+  <Desp>sismember</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>返回成员 member 是否是存储的集合 key的成员。0-不是，1-是</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>cacheName</Name>
+      <Type>java.lang.String</Type>
+      <Desc>缓存容器名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+    <Arg>
+      <Name>member</Name>
+      <Type>java.lang.String</Type>
+      <Desc>成员</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>contain</Name>
+      <Type>int</Type>
+      <Desc>是否包含</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_Redis.java</Path>
+</Component>

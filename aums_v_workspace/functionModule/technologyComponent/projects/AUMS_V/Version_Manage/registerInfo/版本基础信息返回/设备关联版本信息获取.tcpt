@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>401201B4D8CD680ABB685F4986369F53</UUID>
+  <Target>tc.AUMS_V.Version_Manage.util.A_VersionApiController.getcurrentVersion</Target>
+  <Desp>设备关联版本信息获取</Desp>
+  <Group>版本基础信息返回</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>设备关联版本信息获取</ToolTip>
+  <InArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>machineUniqueId</Name>
+      <Type>java.lang.String</Type>
+      <Desc>设备唯一标识</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>result</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>返回C端报文</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_V/Version_Manage/componentSourceCode/tc/AUMS_V/Version_Manage/util/A_VersionApiController.java</Path>
+</Component>

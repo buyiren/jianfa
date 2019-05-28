@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>BB3476895D5BB9EB9D353AABBA23A84B</UUID>
+  <Target>tc.View.Agent.A_FileUtils.A_base64ToFile</Target>
+  <Desp>base64转为文件</Desp>
+  <Group>高效文件处理组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>传入zip文件的base64编码,写入指定的文件中</ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>parent</Name>
+      <Type>java.lang.String</Type>
+      <Desc>zip文件名</Desc>
+    </Arg>
+    <Arg>
+      <Name>base64Str</Name>
+      <Type>java.lang.String</Type>
+      <Desc>文件内容的Base64编码</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_FileUtils.java</Path>
+</Component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6A21FD8840F02620B6E5CF87406B4AC2</UUID>
+  <Target>tc.View.Agent.A_FileUtils.A_getComponentList</Target>
+  <Desp>读取技术组件清单</Desp>
+  <Group>高效文件处理组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>返回用|分隔的文件名清单，不带路径</ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>tradeList</Name>
+      <Type>java.lang.String</Type>
+      <Desc>交易文件名清单</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/AUMS_Agent/Agent/componentSourceCode/tc/View/Agent/A_FileUtils.java</Path>
+</Component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>7A44CED9136068F13E7747751DA0C88A</UUID>
+  <Target>tc.platform.P_List.P_StrInListTrue</Target>
+  <Desp>判断字符串是否在列表中</Desp>
+  <Group>列表处理类</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>2</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>currstr</Name>
+      <Type>java.lang.String</Type>
+      <Desc>需要判断的字符</Desc>
+    </Arg>
+    <Arg>
+      <Name>listdata</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>列表集</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>index</Name>
+      <Type>int</Type>
+      <Desc>下标</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_List.java</Path>
+</Component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>4380E881B9150BA1D9DD750D40BECEDB</UUID>
+  <Target>tc.platform.P_List.P_List_Append</Target>
+  <Desp>列表追加信息</Desp>
+  <Group>列表处理类</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将要追加的变量名追加至入参字典中</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__REQ__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>数据字典容器</Desc>
+    </Arg>
+    <Arg>
+      <Name>varlist</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>要追加的变量名称</Desc>
+    </Arg>
+    <Arg>
+      <Name>list_idx</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>追加的下标</Desc>
+    </Arg>
+    <Arg>
+      <Name>value_list</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>要追加的值</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>追加成功</RET0>
+    <RET1>追加失败</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_List.java</Path>
+</Component>

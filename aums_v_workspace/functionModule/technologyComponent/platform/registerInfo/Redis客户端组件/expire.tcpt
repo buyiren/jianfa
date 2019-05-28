@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>5FDF83A0B3177B35572F4E418041F2C4</UUID>
+  <Target>tc.platform.P_Redis.P_expire</Target>
+  <Desp>expire</Desp>
+  <Group>Redis客户端组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>为key设置一个特定的过期时间，单位为秒。过期时间一到，redis将会从缓存中删除掉该key。在一个有设置过期时间的key上重复设置过期时间将会覆盖原先设置的过期时间。</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>serviceIdentifier</Name>
+      <Type>java.lang.String</Type>
+      <Desc>服务标识</Desc>
+    </Arg>
+    <Arg>
+      <Name>key</Name>
+      <Type>java.lang.String</Type>
+      <Desc>键</Desc>
+    </Arg>
+    <Arg>
+      <Name>seconds</Name>
+      <Type>int</Type>
+      <Desc>过期时间</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_Redis.java</Path>
+</Component>

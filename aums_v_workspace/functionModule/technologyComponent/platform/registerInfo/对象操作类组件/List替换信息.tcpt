@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>21DF0757EA9AABDE4E1C5831A4EEE020</UUID>
+  <Target>tc.platform.P_Object.replaceListValue</Target>
+  <Desp>List替换信息</Desp>
+  <Group>对象操作类组件</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>List替换信息</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>__REQ__</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>数据字典容器</Desc>
+    </Arg>
+    <Arg>
+      <Name>varList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>要替换的变量名称列表</Desc>
+    </Arg>
+    <Arg>
+      <Name>listIndex</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>要替换的下标列表</Desc>
+    </Arg>
+    <Arg>
+      <Name>valueList</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>要替换的值列表</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_Object.java</Path>
+</Component>

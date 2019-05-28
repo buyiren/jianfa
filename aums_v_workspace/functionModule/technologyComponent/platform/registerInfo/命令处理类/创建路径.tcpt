@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>6CFD70713B0DEB1098C9E6700DC1B67A</UUID>
+  <Target>tc.platform.P_Cmd.P_MakeDirs</Target>
+  <Desp>创建路径</Desp>
+  <Group>命令处理类</Group>
+  <Level>0</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>创建递归的目录树，可以是相对或者绝对路径</ToolTip>
+  <InArgs>
+    <Total>3</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>path</Name>
+      <Type>java.lang.String</Type>
+      <Desc>路径</Desc>
+    </Arg>
+    <Arg>
+      <Name>ver</Name>
+      <Type>java.lang.String</Type>
+      <Desc>版本日期</Desc>
+    </Arg>
+    <Arg>
+      <Name>area</Name>
+      <Type>java.lang.String</Type>
+      <Desc>适用区域</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/platform/componentSourceCode/tc/platform/P_Cmd.java</Path>
+</Component>

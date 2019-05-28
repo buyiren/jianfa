@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>89750F51252E17624A646DFE52D13568</UUID>
+  <Target>tc.bank.product.B_SysParam.B_InitSysParam</Target>
+  <Desp>初始化系统参数</Desp>
+  <Group>系统参数类组件</Group>
+  <Level>1</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>将符合条件的参数赋值到入参字典中
+参数级别列表[级别1（代表该参数适用于所有的模块和所有交易）,级别2（代表该参数适用于具体的模块下的所有交易），级别3（代表该参数适用于具体的模块下的具体交易）]
+如果为1，模块和交易代码入参可以为空；如果为2，模块代码入参不为空，交易代码可以为空；如果为3，模块和交易代码入参都不为空</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>req</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaDict</Type>
+      <Desc>入参字典__REQ__</Desc>
+    </Arg>
+    <Arg>
+      <Name>paramLevel</Name>
+      <Type>cn.com.agree.afa.svc.javaengine.context.JavaList</Type>
+      <Desc>参数级别列表</Desc>
+    </Arg>
+    <Arg>
+      <Name>moduleCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>模块代码</Desc>
+    </Arg>
+    <Arg>
+      <Name>transCode</Name>
+      <Type>java.lang.String</Type>
+      <Desc>交易代码</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_SysParam.java</Path>
+</Component>

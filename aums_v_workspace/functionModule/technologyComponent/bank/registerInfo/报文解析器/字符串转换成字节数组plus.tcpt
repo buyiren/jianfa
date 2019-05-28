@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>16AA0A5783A90E34409F18F48A052ED1</UUID>
+  <Target>tc.bank.product.B_StringParser.B_parseToByteArrayPlus</Target>
+  <Desp>字符串转换成字节数组plus</Desp>
+  <Group>报文解析器</Group>
+  <Level>1</Level>
+  <Style>2</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip>字符串转换成字节数组plus</ToolTip>
+  <InArgs>
+    <Total>4</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>origString</Name>
+      <Type>java.lang.String</Type>
+      <Desc>字符串</Desc>
+    </Arg>
+    <Arg>
+      <Name>encoding</Name>
+      <Type>java.lang.String</Type>
+      <Desc>字符编码</Desc>
+    </Arg>
+    <Arg>
+      <Name>isCount</Name>
+      <Type>boolean</Type>
+      <Desc>是否自动添加长度头</Desc>
+    </Arg>
+    <Arg>
+      <Name>headLen</Name>
+      <Type>int</Type>
+      <Desc>头长度</Desc>
+    </Arg>
+  </InArgs>
+  <OutArgs>
+    <Total>1</Total>
+    <Type>0</Type>
+    <Arg>
+      <Name>byteArray</Name>
+      <Type>byte</Type>
+      <Desc>字节数组</Desc>
+    </Arg>
+  </OutArgs>
+  <Logic>
+    <Total>3</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+    <RET2>异常</RET2>
+  </Logic>
+  <Path>/functionModule/technologyComponent/bank/componentSourceCode/tc/bank/product/B_StringParser.java</Path>
+</Component>

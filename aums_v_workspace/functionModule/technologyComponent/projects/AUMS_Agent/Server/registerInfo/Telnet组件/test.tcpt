@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Component>
+  <UUID>423354A5E1D61C3D5B80606B60BEA3C6</UUID>
+  <Target>tc.View.Server.A_TelnetService.A_test</Target>
+  <Desp>test</Desp>
+  <Group>Telnet组件</Group>
+  <Level>2</Level>
+  <Style>1</Style>
+  <Type>0</Type>
+  <AspectUsed>0</AspectUsed>
+  <ToolTip></ToolTip>
+  <InArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </InArgs>
+  <OutArgs>
+    <Total>0</Total>
+    <Type>0</Type>
+  </OutArgs>
+  <Logic>
+    <Total>2</Total>
+    <RET0>失败</RET0>
+    <RET1>成功</RET1>
+  </Logic>
+  <Path>/functionModule/technologyComponent/projects/View/Server/componentSourceCode/tc/View/Server/A_TelnetService.java</Path>
+</Component>
